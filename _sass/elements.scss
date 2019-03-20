@@ -1,22 +1,28 @@
-// Buttons
+// #region Buttons
+
 %btnextend {
 	display: inline-block;
-	border: 1px solid;
-	border-color: rgba($color_mercury,0.5) rgba($color_bon_jour,0.5) $color_mischka;
-	border-radius: 0%;
-	text-decoration: none;
 	background: none;
-	color: $text-primary;
+  transition: color .4s;
+  transition: border-color .4s;
+	color: $primary;
+	border: 1px solid;
+	border-radius: 0%;
+  border-color: #00000000;
+	text-decoration: none;
 	&:hover {
-		box-shadow: 0 0 1px 0 rgba($color_shark,0.5);
-		color: $text-primary-hover;
+		box-shadow: 0px 0px 3px 0.5px #000;
+		color: $primary-hover;
+    border-color: $primary-hover;
 	}
 }
+
 .social-btn {
 	padding: 10px;
 	margin: 10px;
 	@extend %btnextend;
 }
+
 .btn {
 	padding: 10px 18px;
 	@include font-rem(14);
