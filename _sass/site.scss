@@ -69,12 +69,12 @@ body {
 	padding-right: 15px;
 	padding-left: 15px;
 	@include center-block();
-	background-color: $background-transparent-gray;
-	border-radius: 0% !important;
+	background-color: $primary-background;
 	color: $color_shark;
 	z-index: 1;
-	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
+	border: 1px solid $primary-alt;
+	border-radius: 0px;
+	box-shadow: 0px 0px 5px 3px $shadow;
 	@include transition(.5s);
 	@media #{$small} {
 		width: 100%;
