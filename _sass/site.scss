@@ -38,7 +38,70 @@ body {
 
 // #endregion
 
-// #region Flex, Container, Row, Wrapper
+// #region Homepage Styles
+
+.home-container {
+	background-color: $primary-background;
+	color: $color_shark;
+	border: 1px solid $primary-alt;
+	border-radius: 0px;
+	box-shadow: 0px 0px 5px 3px $shadow;
+	width: 36rem;
+	max-width: 550px;
+	padding-right: 15px;
+	padding-left: 15px;
+	@include center-block();
+	z-index: 1;
+	@include transition(.5s);
+	@media #{$small} {
+		width: 100%;
+	    box-shadow: none;
+	}
+	@media #{$medium} {
+		width: 80%;
+	}
+}
+
+// #endregion
+
+// #region Page Styles
+
+.page-content {
+	color: $primary;
+	background-color: $primary-background;
+	@include font-size(14);
+	padding: 0 2rem;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased !important;
+	-moz-font-smoothing: antialiased !important;
+	text-rendering: optimizelegibility !important;
+	text-align: justify;
+	@media #{$small} {
+		padding: 0 .5em;
+	}
+}
+
+.page-wrapper {
+	background-color: $primary-background;
+	border: 1px solid $primary-alt;
+	border-radius: 0px;
+	box-shadow: 0px 0px 5px 3px $shadow;
+
+	width: 75%;
+	max-width: 850px;
+	margin: 4rem auto;
+	padding: 2em;
+	@include transition(.5s);
+	@media #{$small} {
+		width: 90%;
+		padding: 2em 0;
+	    box-shadow: none;
+	}
+}
+
+// #endregion
+
+// #region Grid
 
 .flex {
 	display: -webkit-box;
@@ -63,27 +126,6 @@ body {
 	align-items: center;
 }
 
-.container {
-	width: 36rem;
-	max-width: 550px;
-	padding-right: 15px;
-	padding-left: 15px;
-	@include center-block();
-	background-color: $primary-background;
-	color: $color_shark;
-	z-index: 1;
-	border: 1px solid $primary-alt;
-	border-radius: 0px;
-	box-shadow: 0px 0px 5px 3px $shadow;
-	@include transition(.5s);
-	@media #{$small} {
-		width: 100%;
-	    box-shadow: none;
-	}
-	@media #{$medium} {
-		width: 80%;
-	}
-}
 
 .row {
 	margin-top: 15px;
@@ -94,23 +136,6 @@ body {
 	}
 	@media #{$small} {
 		padding: 0 1em;
-	}
-}
-
-.wrapper {
-	width: 75%;
-	max-width: 850px;
-	margin: 4rem auto;
-	background: $primary-background;
-	color: $color_tuatara;
-	padding: 2em;
-	border-radius: 3px;
-	box-shadow: 0 0 10px 0 rgba($color_shark,0.3);
-	@include transition(.5s);
-	@media #{$small} {
-		width: 90%;
-		padding: 2em 0;
-	    box-shadow: none;
 	}
 }
 
