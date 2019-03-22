@@ -1,37 +1,35 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, moon]
-date: 2016-03-21
+title: Trinity Contracting & Design
+tags: [about]
+date: 2019-03-21
 comments: false
 ---
-    
-<center><a href="http://taylantatli.github.io/Moon"><b>Moon</b></a> is a minimal, one column jekyll theme.</center>
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
+## Mission
 
-## Preview
+The mission of **Trinity Contracting & Design** is to help people build their dreams.
 
-{% capture images %}
-    https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png
-    https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png
-{% endcapture %}
-{% include gallery images=images caption="Screenshots of Moon Theme" cols=2 %}
+No matter how big or how small, the team will professionally handle any construction task with 100% customer satisfaction as their top priority.
 
-See a [live version of Moon](http://taylantatli.github.io/Moon) hosted on GitHub.
+We are dedicated to building the future with modern tools and old fashioned business practices.
 
-## Getting Started
+## History
 
-To learn how to install and use this theme check out the [Setup Guide](http://taylantatli.me/Moon/moon-theme/) for more information.
-      
-[Install Moon](https://github.com/TaylanTatli/Moon){: .btn}
+Trinity Contracting & Design was developed by Justin Hogue as an effort to provide a reliable contracting service
+capable of handling anything from building man-cave garages for neighbors to professionally completing projects for billion dollar companies.
+
+## Services
+
+As a general contracting service, Trinity Contracting & Design is capable of seeing projects through from inspiration, to research and design, to professional completion.
+
+Services include:
+
+- Demolition
+- Remodels
+- Additions
+- New Construction
+
+## Contact
+
+Please reach out to us for more information at our [Contact Page!]({{ site.url }}/contact)
