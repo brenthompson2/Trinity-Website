@@ -20,7 +20,6 @@
 		top: 0;
 		left: 0;
 		background: $comp-color;
-		border: none;
 		width: 48px;
 		height: 45px;
 		text-indent: -900em;
@@ -28,11 +27,10 @@
 		position: relative;
 		cursor: pointer;
 		outline: none;
-		@include border-radius(0,3px,0,0);
 		opacity: 0.6;
-		@media #{$notsmall} {
-			@include border-radius(3px,3px,3px,3px);
-		}
+		border: 1px solid $primary-alt;
+		border-radius: 0px;
+		box-shadow: 0px 0px 3px 1px $shadow;
 	}
 	button:hover,
 	button.dl-active,
@@ -66,13 +64,11 @@
 		h4 {
 			margin:0;
 			padding: 15px 20px 0;
-			color: rgba($white,0.9);
 		}
 		p {
 			margin: 0;
 			padding: 15px 20px;
 			@include font-rem(14);
-			color: rgba($white,0.8);
 			font-weight: 300;
 			a {
 				display: inline;
@@ -93,6 +89,9 @@
 			color: $white;
 			outline: none;
 			text-decoration: none;
+		}
+		a:hover {			
+			color: $primary-alt;
 		}
 		&.dl-back > a {
 			padding-left: 30px;
@@ -130,7 +129,9 @@
 		max-height: 600px;
 		opacity: 0;
 		pointer-events: none;
-		box-shadow: 0 12px 24px rgba($black,0.4);
+		border: 1px solid $primary-alt;
+		border-radius: 0px;
+		box-shadow: 0px 0px 5px 3px $shadow;
 		-webkit-transform: translateY(10px);
 		-moz-transform: translateY(10px);
 		transform: translateY(10px);
@@ -138,7 +139,7 @@
 		-moz-backface-visibility: hidden;
 		backface-visibility: hidden;
 		@media #{$notsmall} {
-			@include border-radius(3px,3px,3px,3px);
+			border-radius: 0px;
 			max-height: 650px;
 		}
 	}
@@ -155,7 +156,6 @@
 		transform: translateY(0px);
 	}
 	.dl-submenu {
-		@include rounded(3px);
 		box-shadow: 0 12px 24px rgba($black,0.4);
 		.btn {
 			margin-bottom: 0;
