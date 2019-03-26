@@ -2,16 +2,12 @@
 layout: page
 ---
 
-<div class="post-list">
-    {% for post in site.posts %} 
-        {% if post.project == null %}
-    <ul>
-        <li class="wow fadeInLeft" data-wow-duration="1.5s">
-            <a class="zoombtn" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-            <p>{{ post.excerpt }}</p>
-            <a href="{{ site.url }}{{ post.url }}" class="btn zoombtn">Read More</a>
-        </li>
-    </ul>
-        {% endif %}
-    {% endfor %}
-</div>
+Please reach out to us for quotes and more information!
+
+<form action="https://formspree.io/email@email.com" method="POST">
+    <input type="text" name="name">
+    <input type="email" name="_replyto">
+    <input type="submit" value="Send">
+  </form> 
+
+You can also call, email, or reach out to us on Facebook.
