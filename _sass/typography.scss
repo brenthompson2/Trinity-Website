@@ -16,6 +16,9 @@
 	color: $primary-alt;
 	font-weight: bold;
 	margin-bottom: 3rem;
+	@media #{$small} {
+		margin-bottom: 2%;
+	}
 }
 
 // headings
@@ -26,6 +29,9 @@ h3.title a {
 h2 {
 	text-decoration: none;
 	color: $primary-alt;
+	@media #{$small} {
+		margin: 2% 0%;
+	}
 }
 
 // post list

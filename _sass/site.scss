@@ -22,7 +22,7 @@ body {
 	background-attachment: fixed;
 	@media #{$small} {
 	    background-image: none !important;
-		background: $white;
+		background-color: $primary-background;
 	}
 }
 
@@ -54,14 +54,15 @@ body {
 	box-shadow: 0px 0px 5px 3px $shadow;
 	width: 36rem;
 	max-width: 550px;
-	padding-right: 15px;
-	padding-left: 15px;
+	padding: 5%;
 	@include center-block();
 	z-index: 1;
 	@include transition(.5s);
 	@media #{$small} {
-		width: 100%;
+		margin: 15% 2% 0% 2%;
+		width: 96%;
 	    box-shadow: none;
+		border: none;
 	}
 	@media #{$medium} {
 		width: 80%;
@@ -83,7 +84,11 @@ body {
 	text-rendering: optimizelegibility !important;
 	text-align: justify;
 	@media #{$small} {
-		padding: 0 .5em;
+		margin: 0%;
+		padding: 0%;
+		width: 100%;
+	    box-shadow: none;
+		border: none;
 	}
 }
 
@@ -99,9 +104,11 @@ body {
 	padding: 2em;
 	@include transition(.5s);
 	@media #{$small} {
+		margin: 15% 5% 0% 5%;
+		padding: 0%;
 		width: 90%;
-		padding: 2em 0;
 	    box-shadow: none;
+		border: none;
 	}
 }
 
