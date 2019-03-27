@@ -16,6 +16,10 @@
 		top: 25px;
 		left: 25px;
 	}
+	@media #{$small} {
+		margin: 2% 2%;
+		width: 30%;
+	}
 	button {
 		top: 0;
 		left: 0;
