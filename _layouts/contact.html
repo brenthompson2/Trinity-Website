@@ -2,13 +2,34 @@
 layout: page
 ---
 
-Please reach out to us for quotes and more information!
-
-<form action="https://formspree.io/email@email.com" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="_replyto">
-    <input type="submit" value="Send">
-  </form> 
-
-You can also call, email, or reach out to us on Facebook.
 {% include social-links.html %}
+
+<form action="https://formspree.io/email@email.com" method="POST" class="form">
+
+    <p>Please reach out to us for quotes and more information!</p>
+
+    <div class="row">
+      <label for="name">Name</label>
+    </div>
+    <div class="row">
+      <input type="text" name="name">
+    </div>
+
+    <div class="row">
+      <label for="_replyto">Email</label>
+    </div>
+    <div class="row">
+      <input type="email" name="_replyto">
+    </div>
+
+    <div class="row">
+      <label for="_replyto">Message</label>
+    </div>
+    <div class="row">
+      <textarea type="text" name="message" rows="3"></textarea>
+    </div>
+
+    <div class="row">
+        <input class="form-button" type="submit" value="Send">
+    </div>
+  </form> 

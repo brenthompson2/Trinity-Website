@@ -108,6 +108,48 @@
 
 // #endregion
 
+// #region Forms
+.form{
+  color: $primary;
+  text-align: center;
+
+  .row{
+    padding: 0%;
+    margin: 0%;
+    @media #{$small} {
+      text-align: left;
+      padding-left: 10%;
+    }
+  }
+
+  label{
+    padding: 0%;
+    margin: 0%;
+  }
+
+  input,
+  textarea {
+    background-color: $black;
+    color: $primary;
+    border: 1px solid $primary-alt;
+    border-radius: 0px;
+    padding: 1% 2%;
+    width: 60%;
+    @media #{$small} {
+      width: 90%;
+    }
+  }
+
+  .form-button{
+    margin-top: 2%;
+    width: 60%;
+    @media #{$small} {
+      width: 90%;
+    }
+  }
+}
+// #endregion
+
 // #region images and figures
 
 img {
