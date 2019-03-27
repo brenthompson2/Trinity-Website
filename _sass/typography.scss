@@ -1,18 +1,20 @@
-// titles
-.title {
-	text-align: center;
-	font-weight: bold;
-	> p {
-		text-align: center;
-		font-weight: bold;
-	}
-	> a > p {
-		text-align: center;
-		font-weight: bold;
-	}
+// Headings & Titles
+.title-font {
+	font-family: $font-primary;
+	color: $primary-alt;
+}
+h1 {
+	@extend .title-font;
+}
+h2 {
+	color: $primary-alt;
 	@media #{$small} {
-		margin: 0%;
+		margin: 2% 0%;
 	}
+}
+h3 {
+	color: $primary;
+	font-weight: normal;
 }
 .post-title {
 	text-align: center;
@@ -21,19 +23,6 @@
 	margin-bottom: 3rem;
 	@media #{$small} {
 		margin-bottom: 2%;
-	}
-}
-
-// headings
-h3.title a {
-	text-decoration: none;
-	color: $primary;
-}
-h2 {
-	text-decoration: none;
-	color: $primary-alt;
-	@media #{$small} {
-		margin: 2% 0%;
 	}
 }
 
