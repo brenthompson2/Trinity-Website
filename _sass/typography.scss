@@ -10,6 +10,9 @@
 		text-align: center;
 		font-weight: bold;
 	}
+	@media #{$small} {
+		margin: 0%;
+	}
 }
 .post-title {
 	text-align: center;

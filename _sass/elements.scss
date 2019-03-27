@@ -18,9 +18,13 @@
 }
 
 .social-btn {
-	padding: 10px;
-	margin: 10px;
-	@extend %btnextend;
+  padding: 10px;
+  margin: 10px;
+  @extend %btnextend;
+  display: initial;
+  padding: 2%;
+  width: 50px;
+  height: 50px;
 }
 
 .btn {
