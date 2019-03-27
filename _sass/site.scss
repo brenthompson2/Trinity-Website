@@ -36,6 +36,12 @@ body {
 	box-sizing: border-box;
 }
 
+.hidden-on-mobile{
+	@media #{$small} {
+		visibility: hidden;
+	}
+}
+
 // #endregion
 
 // #region Homepage Styles
